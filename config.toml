@@ -1,0 +1,3 @@
+URL='localhost:4010/send_sms'
+user='Gera'
+password='123'
