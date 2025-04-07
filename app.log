@@ -1,0 +1,23 @@
+2025-04-07 17:29:40,219 - __main__ - INFO - programm is ready
+2025-04-07 17:29:40,260 - __main__ - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
+2025-04-07 17:29:40,263 - __main__ - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
+2025-04-07 17:29:40,267 - __main__ - INFO - answer code: 200, body: {"status":"success","message_id":"123456"}
+2025-04-07 17:32:44,481 - MyProgramm - INFO - programm is ready
+2025-04-07 17:32:44,487 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
+2025-04-07 17:32:44,490 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
+2025-04-07 17:32:44,493 - MyProgramm - INFO - received response code: 200, body: {"status":"success","message_id":"123456"}
+2025-04-07 17:49:45,828 - MyProgramm - INFO - programm is ready
+2025-04-07 17:49:45,834 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
+2025-04-07 17:49:45,837 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
+2025-04-07 17:49:45,840 - MyProgramm - INFO - received response code: 200, body: {"status":"success","message_id":"123456"}
+2025-04-07 18:01:08,003 - MyProgramm - INFO - programm is ready
+2025-04-07 18:01:08,009 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
+2025-04-07 18:01:08,011 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
+2025-04-07 18:16:40,475 - MyProgramm - INFO - programm is ready
+2025-04-07 18:16:40,480 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
+2025-04-07 18:16:40,483 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
+2025-04-07 18:16:40,517 - MyProgramm - INFO - received response code: 200, body: {"status":"success","message_id":"123456"}
+2025-04-07 18:17:44,744 - MyProgramm - INFO - programm is ready
+2025-04-07 18:17:44,749 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
+2025-04-07 18:17:44,753 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
+2025-04-07 18:17:44,758 - MyProgramm - INFO - received response code: 200, body: {"status":"success","message_id":"123456"}
