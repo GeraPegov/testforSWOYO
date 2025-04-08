@@ -1,23 +1,576 @@
-2025-04-07 17:29:40,219 - __main__ - INFO - programm is ready
-2025-04-07 17:29:40,260 - __main__ - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
-2025-04-07 17:29:40,263 - __main__ - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
-2025-04-07 17:29:40,267 - __main__ - INFO - answer code: 200, body: {"status":"success","message_id":"123456"}
-2025-04-07 17:32:44,481 - MyProgramm - INFO - programm is ready
-2025-04-07 17:32:44,487 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
-2025-04-07 17:32:44,490 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
-2025-04-07 17:32:44,493 - MyProgramm - INFO - received response code: 200, body: {"status":"success","message_id":"123456"}
-2025-04-07 17:49:45,828 - MyProgramm - INFO - programm is ready
-2025-04-07 17:49:45,834 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
-2025-04-07 17:49:45,837 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
-2025-04-07 17:49:45,840 - MyProgramm - INFO - received response code: 200, body: {"status":"success","message_id":"123456"}
-2025-04-07 18:01:08,003 - MyProgramm - INFO - programm is ready
-2025-04-07 18:01:08,009 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
-2025-04-07 18:01:08,011 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
-2025-04-07 18:16:40,475 - MyProgramm - INFO - programm is ready
-2025-04-07 18:16:40,480 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
-2025-04-07 18:16:40,483 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
-2025-04-07 18:16:40,517 - MyProgramm - INFO - received response code: 200, body: {"status":"success","message_id":"123456"}
-2025-04-07 18:17:44,744 - MyProgramm - INFO - programm is ready
-2025-04-07 18:17:44,749 - MyProgramm - INFO - send text for HTTPRequest {'sender': '+12321', 'recipient': '+51515', 'message': 'HELLO'}
-2025-04-07 18:17:44,753 - MyProgramm - INFO - send HTTPRequest b'POST /send_sms HTTP/1.1\r\nHost: localhost:4010/send_sms\r\nAuthorization: Basic c2VsZi5wYXNzd29yZDpzZWxmLm5hbWU=\r\nContent-Type: application/json\r\nContent-Length: 63\r\n\r\n{"sender": "+12321", "recipient": "+51515", "message": "HELLO"}'
-2025-04-07 18:17:44,758 - MyProgramm - INFO - received response code: 200, body: {"status":"success","message_id":"123456"}
+2025-04-08 09:36:55,457 - MyProgramm - INFO - programm is ready
+2025-04-08 09:36:55,463 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:36:55,466 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:36:55,466 - MyProgramm - INFO - ('localhost', 4010)
+2025-04-08 09:36:55,469 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ ('localhost', 4010)
+2025-04-08 09:36:55,469 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ b'POST /4010 HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:36:55,471 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: HTTP/1.1 404 Not Found, пїЅпїЅпїЅпїЅ: {"type":"https://stoplight.io/prism/errors#NO_PATH_MATCHED_ERROR","title":"Route not resolved, no path matched","status":404,"detail":"The route /4010 hasn't been found in the specification file"}
+2025-04-08 09:36:55,472 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2025-04-08 09:37:28,930 - MyProgramm - INFO - programm is ready
+2025-04-08 09:37:28,936 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:37:28,939 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:37:28,939 - MyProgramm - INFO - ('localhost', 4010)
+2025-04-08 09:37:28,942 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ ('localhost', 4010)
+2025-04-08 09:37:28,942 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ b'POST /4010 HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:37:28,944 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: HTTP/1.1 404 Not Found, пїЅпїЅпїЅпїЅ: {"type":"https://stoplight.io/prism/errors#NO_PATH_MATCHED_ERROR","title":"Route not resolved, no path matched","status":404,"detail":"The route /4010 hasn't been found in the specification file"}
+2025-04-08 09:37:28,944 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2025-04-08 09:38:45,111 - MyProgramm - INFO - programm is ready
+2025-04-08 09:38:45,117 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:38:45,120 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:38:45,120 - MyProgramm - INFO - ('localhost', 4010)
+2025-04-08 09:38:45,123 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ ('localhost', 4010)
+2025-04-08 09:38:45,123 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ b'POST 4010 HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:38:45,124 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: HTTP/1.1 400 Bad Request, пїЅпїЅпїЅпїЅ: 
+2025-04-08 09:38:45,124 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2025-04-08 09:40:27,479 - MyProgramm - INFO - programm is ready
+2025-04-08 09:40:27,485 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:40:27,488 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:40:27,488 - MyProgramm - INFO - ('localhost', 4010)
+2025-04-08 09:40:27,491 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ ('localhost', 4010)
+2025-04-08 09:40:27,491 - MyProgramm - INFO - HTTP POST 4010 HTTP/1.1
+
+Host: localhost
+
+Authorization: Basic R2VyYToxMjM=
+
+Content-Type: application/json
+
+Content-Length: 58
+
+
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:40:27,491 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ b'POST 4010 HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:40:27,491 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: HTTP/1.1 400 Bad Request, пїЅпїЅпїЅпїЅ: 
+2025-04-08 09:40:27,492 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2025-04-08 09:43:55,565 - MyProgramm - INFO - programm is ready
+2025-04-08 09:43:55,571 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:43:55,574 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:43:55,575 - MyProgramm - INFO - ('localhost', 4010)
+2025-04-08 09:43:55,577 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ ('localhost', 4010)
+2025-04-08 09:43:55,577 - MyProgramm - INFO - HTTP POST /4010 HTTP/1.1
+
+Host: localhost
+
+Authorization: Basic R2VyYToxMjM=
+
+Content-Type: application/json
+
+Content-Length: 58
+
+
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:43:55,578 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ b'POST /4010 HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:43:55,583 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: HTTP/1.1 404 Not Found, пїЅпїЅпїЅпїЅ: {"type":"https://stoplight.io/prism/errors#NO_PATH_MATCHED_ERROR","title":"Route not resolved, no path matched","status":404,"detail":"The route /4010 hasn't been found in the specification file"}
+2025-04-08 09:43:55,583 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2025-04-08 09:45:57,340 - MyProgramm - INFO - programm is ready
+2025-04-08 09:45:57,346 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:45:57,349 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:45:57,349 - MyProgramm - INFO - (<class 'str'>, <class 'int'>) TYPE
+2025-04-08 09:45:57,352 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ ('localhost', 4010)
+2025-04-08 09:45:57,352 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+
+Host: localhost
+
+Authorization: Basic R2VyYToxMjM=
+
+Content-Type: application/json
+
+Content-Length: 58
+
+
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:45:57,352 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:45:57,382 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: HTTP/1.1 200 OK, пїЅпїЅпїЅпїЅ: {"status":"success","message_id":"123456"}
+2025-04-08 09:45:57,382 - MyProgramm - INFO - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2025-04-08 09:51:27,910 - MyProgramm - INFO - programm is ready
+2025-04-08 09:51:27,916 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:51:27,919 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:51:27,922 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 09:51:27,922 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:51:27,922 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:51:27,927 - MyProgramm - ERROR - Непредвиденная ошибка: dictionary update sequence element #0 has length 1; 2 is required
+2025-04-08 09:51:27,927 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 09:56:42,232 - MyProgramm - INFO - programm is ready
+2025-04-08 09:56:42,238 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:56:42,241 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:56:42,244 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 09:56:42,244 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:56:42,244 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:56:42,277 - MyProgramm - INFO - Декодируемый вывод <class 'str'>
+2025-04-08 09:56:42,278 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 09:56:57,007 - MyProgramm - INFO - programm is ready
+2025-04-08 09:56:57,013 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:56:57,016 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:56:57,019 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 09:56:57,019 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:56:57,019 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:56:57,024 - MyProgramm - INFO - Декодируемый вывод ['{"status":"success","message_id":"123456"}']
+2025-04-08 09:56:57,024 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 09:57:31,630 - MyProgramm - INFO - programm is ready
+2025-04-08 09:57:31,636 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:57:31,640 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:57:31,643 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 09:57:31,643 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:57:31,643 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:57:31,647 - MyProgramm - INFO - Декодируемый вывод ['{', '"', 's', 't', 'a', 't', 'u', 's', '"', ':', '"', 's', 'u', 'c', 'c', 'e', 's', 's', '"', ',', '"', 'm', 'e', 's', 's', 'a', 'g', 'e', '_', 'i', 'd', '"', ':', '"', '1', '2', '3', '4', '5', '6', '"', '}']
+2025-04-08 09:57:31,647 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 09:58:00,863 - MyProgramm - INFO - programm is ready
+2025-04-08 09:58:00,869 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:58:00,872 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:58:00,875 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 09:58:00,875 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:58:00,875 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:58:00,879 - MyProgramm - INFO - Декодируемый вывод {"status":"success","message_id":"123456"}
+2025-04-08 09:58:00,880 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 09:58:20,745 - MyProgramm - INFO - programm is ready
+2025-04-08 09:58:20,751 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:58:20,754 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:58:20,757 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 09:58:20,757 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:58:20,757 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:58:20,761 - MyProgramm - INFO - Декодируемый вывод ['{"status":"success","message_id":"123456"}']
+2025-04-08 09:58:20,761 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 09:58:30,159 - MyProgramm - INFO - programm is ready
+2025-04-08 09:58:30,165 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:58:30,168 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 09:58:30,171 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 09:58:30,171 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 09:58:30,171 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 09:58:30,174 - MyProgramm - INFO - Декодируемый вывод ['{"status"', '"success","message_id"', '"123456"}']
+2025-04-08 09:58:30,174 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:02:55,969 - MyProgramm - INFO - programm is ready
+2025-04-08 10:02:55,975 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:02:55,979 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:02:55,982 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:02:55,982 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:02:55,982 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:02:55,985 - MyProgramm - INFO - Декодируемый вывод {"status"="success","message_id"="123456"}
+2025-04-08 10:02:55,985 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:03:18,483 - MyProgramm - INFO - programm is ready
+2025-04-08 10:03:18,489 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:03:18,492 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:03:18,495 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:03:18,495 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:03:18,495 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:03:18,498 - MyProgramm - INFO - Декодируемый вывод {"status"="success","message_id"="123456"}
+2025-04-08 10:03:18,499 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:03:58,633 - MyProgramm - INFO - programm is ready
+2025-04-08 10:03:58,639 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:03:58,642 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:03:58,645 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:03:58,645 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:03:58,645 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:03:58,650 - MyProgramm - ERROR - Непредвиденная ошибка: dictionary update sequence element #0 has length 1; 2 is required
+2025-04-08 10:03:58,650 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:04:48,657 - MyProgramm - INFO - programm is ready
+2025-04-08 10:04:48,663 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:04:48,666 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:04:48,669 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:04:48,669 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:04:48,669 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:04:48,672 - MyProgramm - INFO - Декодируемый вывод {"status"="success","message_id"="123456"}
+2025-04-08 10:04:48,673 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:05:37,099 - MyProgramm - INFO - programm is ready
+2025-04-08 10:05:37,106 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:05:37,109 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:05:37,112 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:05:37,112 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:05:37,112 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:05:37,115 - MyProgramm - INFO - Декодируемый вывод {"status"="success","message_id"="123456"}
+2025-04-08 10:05:37,116 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:06:48,329 - MyProgramm - INFO - programm is ready
+2025-04-08 10:06:48,335 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:06:48,339 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:06:48,342 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:06:48,342 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:06:48,342 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:06:48,345 - MyProgramm - INFO - Декодируемый вывод ('{"status"="success","message_id"="123456"}', '{"status":"success","message_id":"123456")')
+2025-04-08 10:06:48,345 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:07:28,015 - MyProgramm - INFO - programm is ready
+2025-04-08 10:07:28,021 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:07:28,025 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:07:28,028 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:07:28,028 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:07:28,028 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:07:28,031 - MyProgramm - INFO - Декодируемый вывод ("status"="success","message_id"="123456")
+2025-04-08 10:07:28,031 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:07:38,230 - MyProgramm - INFO - programm is ready
+2025-04-08 10:07:38,236 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:07:38,240 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:07:38,242 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:07:38,243 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:07:38,243 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:07:38,245 - MyProgramm - ERROR - Непредвиденная ошибка: dictionary update sequence element #0 has length 1; 2 is required
+2025-04-08 10:07:38,245 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:08:16,358 - MyProgramm - INFO - programm is ready
+2025-04-08 10:08:16,364 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:08:16,368 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:08:16,371 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:08:16,371 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:08:16,371 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:08:16,373 - MyProgramm - ERROR - Непредвиденная ошибка: dictionary update sequence element #0 has length 1; 2 is required
+2025-04-08 10:08:16,374 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:08:24,432 - MyProgramm - INFO - programm is ready
+2025-04-08 10:08:24,437 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:08:24,441 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:08:24,444 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:08:24,444 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:08:24,444 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:08:24,447 - MyProgramm - INFO - Декодируемый вывод "status"="success","message_id"="123456"
+2025-04-08 10:08:24,447 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:08:37,999 - MyProgramm - INFO - programm is ready
+2025-04-08 10:08:38,006 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:08:38,009 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:08:38,012 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:08:38,012 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:08:38,012 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:08:38,015 - MyProgramm - INFO - Декодируемый вывод status=success,message_id=123456
+2025-04-08 10:08:38,015 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:09:05,721 - MyProgramm - INFO - programm is ready
+2025-04-08 10:09:05,727 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:09:05,731 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:09:05,734 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:09:05,734 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:09:05,734 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:09:05,737 - MyProgramm - INFO - Декодируемый вывод status=success,message_id=123456
+2025-04-08 10:09:05,737 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:10:23,678 - MyProgramm - INFO - programm is ready
+2025-04-08 10:10:23,684 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:10:23,687 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:10:23,690 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:10:23,690 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:10:23,690 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:10:23,693 - MyProgramm - INFO - Декодируемый вывод ['status=success', 'message_id=123456']
+2025-04-08 10:10:23,693 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:11:10,689 - MyProgramm - INFO - programm is ready
+2025-04-08 10:11:10,695 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:11:10,698 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:11:10,701 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:11:10,701 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:11:10,701 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:11:10,704 - MyProgramm - INFO - Декодируемый вывод status=success; message_id=123456
+2025-04-08 10:11:10,704 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:14:59,376 - MyProgramm - INFO - programm is ready
+2025-04-08 10:14:59,382 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:14:59,385 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:14:59,388 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:14:59,388 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:14:59,389 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:14:59,392 - MyProgramm - INFO - Декодируемый вывод Status code: HTTP/1.1 200 OK
+Body: status=success; message_id=123456
+2025-04-08 10:14:59,393 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:15:12,547 - MyProgramm - INFO - programm is ready
+2025-04-08 10:15:12,553 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:15:12,556 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:15:12,559 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:15:12,559 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:15:12,559 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:15:12,562 - MyProgramm - INFO - Декодируемый вывод Status code: HTTP/1.1 200 OK
+Body: status=success, message_id=123456
+2025-04-08 10:15:12,562 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:16:56,968 - MyProgramm - INFO - programm is ready
+2025-04-08 10:16:56,974 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:16:56,977 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:16:56,980 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:16:56,980 - MyProgramm - INFO - HTTP POST /localhost:4010 HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:16:56,980 - MyProgramm - INFO - Отправка запроса в байтах b'POST /localhost:4010 HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:16:56,981 - MyProgramm - INFO - Декодируемый вывод Status code: HTTP/1.1 404 Not Found
+Body: type=https=//stoplight.io/prism/errors#NO_PATH_MATCHED_ERROR, title=Route not resolved,  no path matched, status=404, detail=The route /localhost=4010 hasn't been found in the specification file
+2025-04-08 10:16:56,982 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:17:11,943 - MyProgramm - INFO - programm is ready
+2025-04-08 10:17:11,949 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:17:11,952 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:17:11,955 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:17:11,955 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:17:11,955 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:17:11,958 - MyProgramm - INFO - Декодируемый вывод Status code: HTTP/1.1 200 OK
+Body: status=success, message_id=123456
+2025-04-08 10:17:11,959 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:20:15,689 - MyProgramm - INFO - programm is ready
+2025-04-08 10:20:15,695 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:20:15,699 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:20:15,702 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:20:15,702 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:20:15,702 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:20:15,705 - MyProgramm - INFO - Декодируемый вывод Status code: 200: OK
+Body: status=success, message_id=123456
+2025-04-08 10:20:15,706 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:20:26,289 - MyProgramm - INFO - programm is ready
+2025-04-08 10:20:26,295 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:20:26,298 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:20:26,301 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:20:26,301 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:20:26,301 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:20:26,304 - MyProgramm - INFO - Декодируемый вывод Status code: 200 OK
+Body: status=success, message_id=123456
+2025-04-08 10:20:26,305 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:21:09,257 - MyProgramm - INFO - programm is ready
+2025-04-08 10:21:09,263 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:21:09,267 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:21:09,270 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:21:09,270 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:21:09,270 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:21:09,272 - MyProgramm - INFO - Декодируемый вывод Status code: 200 OK
+Body: status = success, message_id = 123456
+2025-04-08 10:21:09,273 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:22:22,545 - MyProgramm - INFO - programm is ready
+2025-04-08 10:22:22,551 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:22:22,554 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:22:22,557 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:22:22,557 - MyProgramm - INFO - HTTP POST /localhost:4010 HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:22:22,557 - MyProgramm - INFO - Отправка запроса в байтах b'POST /localhost:4010 HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:22:22,558 - MyProgramm - INFO - Декодируемый вывод Status code: 404 Not Found
+Body: type = https = //stoplight.io/prism/errors#NO_PATH_MATCHED_ERROR, title = Route not resolved,  no path matched, status = 404, detail = The route /localhost = 4010 hasn't been found in the specification file
+2025-04-08 10:22:22,559 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:23:34,247 - MyProgramm - INFO - programm is ready
+2025-04-08 10:23:34,253 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:23:34,257 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:23:34,260 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:23:34,260 - MyProgramm - INFO - HTTP POST /localhost:4010 HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:23:34,260 - MyProgramm - INFO - Отправка запроса в байтах b'POST /localhost:4010 HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:23:34,261 - MyProgramm - INFO - Декодируемый вывод Status code: 404 Not Found
+Body: type:https://stoplight.io/prism/errors#NO_PATH_MATCHED_ERROR, title:Route not resolved,  no path matched, status:404, detail:The route /localhost:4010 hasn't been found in the specification file
+2025-04-08 10:23:34,262 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:24:02,976 - MyProgramm - INFO - programm is ready
+2025-04-08 10:24:02,982 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:24:02,986 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:24:02,989 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:24:02,989 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:24:02,989 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:24:02,991 - MyProgramm - INFO - Декодируемый вывод Status code: 200 OK
+Body: status:success, message_id:123456
+2025-04-08 10:24:02,992 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:24:22,794 - MyProgramm - INFO - programm is ready
+2025-04-08 10:24:22,800 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:24:22,803 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:24:22,806 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:24:22,806 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:24:22,806 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:24:22,809 - MyProgramm - INFO - Декодируемый вывод Status code 200 OK
+Body status:success, message_id:123456
+2025-04-08 10:24:22,810 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:24:37,745 - MyProgramm - INFO - programm is ready
+2025-04-08 10:24:37,751 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:24:37,754 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:24:37,757 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:24:37,757 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:24:37,757 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:24:37,760 - MyProgramm - INFO - Декодируемый вывод Status code = 200 OK
+Body = status:success, message_id:123456
+2025-04-08 10:24:37,761 - MyProgramm - INFO - Соединение закрыто
+2025-04-08 10:41:22,487 - MyProgramm - INFO - programm is ready
+2025-04-08 10:41:22,493 - MyProgramm - INFO - Получены параметры: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:41:22,497 - MyProgramm - INFO - Создан объект запроса с параметрами: {'sender': 'qwer', 'recipient': 'qwer', 'message': 'qwer'}
+2025-04-08 10:41:22,500 - MyProgramm - INFO - Подключение к порту ('localhost', 4010)
+2025-04-08 10:41:22,500 - MyProgramm - INFO - HTTP POST /send_sms HTTP/1.1
+Host: localhost
+Authorization: Basic R2VyYToxMjM=
+Content-Type: application/json
+Content-Length: 58
+
+{"sender": "qwer", "recipient": "qwer", "message": "qwer"}
+2025-04-08 10:41:22,500 - MyProgramm - INFO - Отправка запроса в байтах b'POST /send_sms HTTP/1.1\r\nHost: localhost\r\nAuthorization: Basic R2VyYToxMjM=\r\nContent-Type: application/json\r\nContent-Length: 58\r\n\r\n{"sender": "qwer", "recipient": "qwer", "message": "qwer"}'
+2025-04-08 10:41:22,526 - MyProgramm - INFO - Декодируемый вывод Status code = 200 OK
+Body = status:success, message_id:123456
+2025-04-08 10:41:22,527 - MyProgramm - INFO - Соединение закрыто
