@@ -19,7 +19,7 @@ parser.add_argument('sender', type=str, help='Номер отправителя'
 parser.add_argument('recipient', type=str, help='Номер получателя')
 parser.add_argument('message', type=str, help='Текст сообщения')
 
-# Вывод справки  если аргументы не переданы
+#вывод справки  если аргументы не переданы
 import sys
 if len(sys.argv) == 1:
     parser.print_help()
